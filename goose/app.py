@@ -8,7 +8,7 @@ from bson import ObjectId
 import json
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = os.urandom(32)
+app.config["SECRET_KEY"] = "kluchik"
 app.config["MONGO_URI"] = (
     "mongodb://mongo111:mongo111@mongo:27017/mongo111?authSource=admin"
 )
